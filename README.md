@@ -1,12 +1,51 @@
-# React + Vite
+# React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Todo application built with **React** and **Tailwind CSS**. This app allows users to manage their tasks efficiently with an intuitive interface and smooth interactions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Add Todos:** Quickly add new tasks with a simple input form.
+- **Edit Todos:** Inline editing with automatic focus and cursor placement.
+- **Mark Complete:** Toggle tasks between active and completed states using checkboxes.
+- **Delete Todos:** Remove tasks individually.
+- **Responsive Design:** Fully responsive layout with proportional input and button scaling.
+- **Context API:** State management handled using React Context for clean and scalable code.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Anvesh1041/React_Todo.git
+cd React-Todo
+```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start the development server
+```bash
+npm run dev
+```
+4. Open http://localhost:5173 in your browser to view the app.
+
+---
+
+## Usage
+- Enter a task in the input field and click Add to create a new todo.
+- Click the edit (✏️) button to modify a task.
+- Use the checkbox to mark tasks as completed.
+- Click the delete (❌) button to remove a task.
+
+---
+
+## Technologies used
+- **React –** Front-end library for building UI.
+- **Tailwind CSS –** Utility-first CSS framework for styling.
+- **React Context API –** State management across the app.
+- **Vite –** Fast development server and build tool.

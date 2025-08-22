@@ -11,7 +11,7 @@ function TodoElement({todo}) {
         editTodo(todo.id, {...todo, text : todoText})
         setIsEditable(false)
     }
-    console.log(isEditable)
+    // console.log(isEditable)
     const handleDelete = ()=>{
         deleteTodo(todo.id)
     }

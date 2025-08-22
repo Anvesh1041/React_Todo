@@ -1,17 +1,19 @@
 # React Todo App
 
-A modern and responsive Todo application built with **React** and **Tailwind CSS**. This app allows users to manage their tasks efficiently with an intuitive interface and smooth interactions.
+A modern Todo application built with **React** and **Tailwind CSS**. Todos are saved automatically in the browser, allowing users to manage their tasks efficiently with an intuitive interface and smooth interactions.
+
 
 ---
 
 ## Features
 
 - **Add Todos:** Quickly add new tasks with a simple input form.
-- **Edit Todos:** Inline editing with automatic focus and cursor placement.
+- **Edit Todos:** Edit tasks directly in the list.
 - **Mark Complete:** Toggle tasks between active and completed states using checkboxes.
 - **Delete Todos:** Remove tasks individually.
-- **Responsive Design:** Fully responsive layout with proportional input and button scaling.
 - **Context API:** State management handled using React Context for clean and scalable code.
+- **Persistent Storage:** Todos are saved in localStorage, so tasks remain after page refresh.
+
 
 ---
 
@@ -41,8 +43,8 @@ npm run dev
 - Click the edit (✏️) button to modify a task.
 - Use the checkbox to mark tasks as completed.
 - Click the delete (❌) button to remove a task.
+- Todos are saved automatically in your browser, so refreshing the page won’t delete them.
 
----
 
 ## Technologies used
 - **React –** Front-end library for building UI.

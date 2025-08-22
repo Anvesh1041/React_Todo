@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { TodoProvider } from "./context/ToDoContext"
 import TodoForm from "./components/TodoForm"
 import TodoElement from "./components/TodoElement"
@@ -21,6 +21,18 @@ function App() {
   const toggleActive = (id) => {
     setTodos((prev) => prev.map((prevTodo) => prevTodo.id === id ? { ...prevTodo, isActive: !prevTodo.isActive } : prevTodo))
   }
+
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"))
+
+    if (todos && todos.length > 0) {
+      setTodos(todos)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
 
   return (
     <TodoProvider value={{ todos, addTodo, editTodo, deleteTodo, toggleActive }}>
